@@ -27,4 +27,27 @@ source scripts/put.sh
 # Parse arguments
 source scripts/args.sh
 
+# Find all test scripts
+tests=$(find test/srcs/expected -name *_test.c -exec sh -c "basename {} | sed 's/_test.c$//'" \;)
+
+# Compile the tests
+info "Compiling the tests..."
+make all > /dev/null 2>&1 || error "Error when compiling the tests..."
+
+# Create logs folder
+mkdir -p logs/expected
+mkdir -p logs/user
+
+for name in ${tests[@]}
+do
+	./outs/expected/$name\_test.out > logs/expected/$name\_test.c 2>&1
+	./outs/user/$name\_test.out > logs/user/$name\_test.c 2>&1
+	if diff logs/expected/$name\_test.c logs/user/$name\_test.c
+	then
+		printf "%-20s [\033[32mOK\033[0m]\n" $name
+	else
+		printf "%-20s [\033[31mKO\033[0m]\n" $name
+	fi
+done
+
 make clean > /dev/null 2>&1
