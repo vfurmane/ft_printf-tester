@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 13:06:59 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/01/18 18:39:15 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/01/19 11:06:20 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ int	main(void)
 	printf("Returned value	: %d\n", printf("%0.7d\n", nbr));
 	printf("Returned value	: %d\n", printf("%-.7d\n", nbr));
 	printf("Returned value	: %d\n", printf("%.*d\n", 7, nbr));
-	printf("Returned value	: %d\n", printf("%Hell% World%\n"));
-	printf("Returned value	: %d\n", printf("Hello World and %42\n"));
+	printf("Returned value	: %d\n", printf("WPL - %Hello Wo%rld\n"));
 	return (0);
 }
