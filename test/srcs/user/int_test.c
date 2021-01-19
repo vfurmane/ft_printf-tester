@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 13:06:59 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/01/19 11:06:11 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/01/19 11:39:32 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	main(void)
 	int	nbr;
 
 	nbr = 42;
+	ft_printf("Returned value	: %d\n", ft_printf("Hello World\n"));
 	ft_printf("Returned value	: %d\n", ft_printf("%d\n", nbr));
 	ft_printf("Returned value	: %d\n", ft_printf("Hello World and %d\n", nbr));
 	ft_printf("Returned value	: %d\n", ft_printf("Hello %d and World\n", nbr));
