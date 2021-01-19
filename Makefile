@@ -6,7 +6,7 @@
 #    By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/13 10:32:22 by vfurmane          #+#    #+#              #
-#    Updated: 2021/01/18 17:11:50 by vfurmane         ###   ########.fr        #
+#    Updated: 2021/01/19 11:59:41 by vfurmane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,9 @@ outs/%.out:	test/srcs/%.o
 			$(CC) $(CFLAGS) $(FSAN) $< -o $@ -L$(FT_PRINTF) -lftprintf
 
 all:		$(EX_EXEC) $(US_EXEC)
+
+ft_printf:
+			make -C $(FT_PRINTF)
 
 flags:
 			$(CC) $(CFLAGS) -c $(FT_PRINTF)/*.c -I $(INCL) -I $(FT_PRINTF)/libft

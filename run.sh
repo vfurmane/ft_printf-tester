@@ -30,6 +30,10 @@ source scripts/args.sh
 # Find all test scripts
 tests=$(find test/srcs/expected -name *_test.c -exec sh -c "basename {} | sed 's/_test.c$//'" \;)
 
+# Compile libftprintf
+info "Compiling libftprintf.a..."
+make ft_printf > /dev/null 2>&1 || error "Error when compiling libftprintf.a..."
+
 # Compile the tests
 info "Compiling the tests..."
 make all > /dev/null 2>&1 || error "Error when compiling the tests..."
