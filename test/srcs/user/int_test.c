@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 13:06:59 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/01/19 11:39:32 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/01/19 11:58:21 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	main(void)
 	ft_printf("Returned value	: %d\n", ft_printf("Hello World and %d\n", nbr));
 	ft_printf("Returned value	: %d\n", ft_printf("Hello %d and World\n", nbr));
 	ft_printf("Returned value	: %d\n", ft_printf("%d - %d = %d\n", nbr, nbr, nbr - nbr));
+	ft_printf("Returned value	: %d\n", ft_printf("%d - %d = %d\n", nbr, -nbr, nbr - -nbr));
 	ft_printf("Returned value	: %d\n", ft_printf("%0d\n", nbr));
 	ft_printf("Returned value	: %d\n", ft_printf("%-d\n", nbr));
 	ft_printf("Returned value	: %d\n", ft_printf("%7d\n", nbr));

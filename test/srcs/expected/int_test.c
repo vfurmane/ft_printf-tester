@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 13:06:59 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/01/19 11:36:39 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/01/19 12:00:50 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int	main(void)
 	printf("Returned value	: %d\n", printf("Hello World and %d\n", nbr));
 	printf("Returned value	: %d\n", printf("Hello %d and World\n", nbr));
 	printf("Returned value	: %d\n", printf("%d - %d = %d\n", nbr, nbr, nbr - nbr));
+	printf("Returned value	: %d\n", printf("%d - %d = %d\n", nbr, -nbr, nbr - -nbr));
 	printf("Returned value	: %d\n", printf("%0d\n", nbr));
 	printf("Returned value	: %d\n", printf("%-d\n", nbr));
 	printf("Returned value	: %d\n", printf("%7d\n", nbr));
