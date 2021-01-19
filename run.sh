@@ -75,7 +75,7 @@ do
 	fi
 done
 
-if ([ "$OSTYPE" == "linux-gnu"* ] || [ "$OSTYPE" == "cygwin" ]) && [ $LINUX -eq 0 ]
+if ([ "$OSTYPE" == "linux-gnu" ] || [ "$OSTYPE" == "cygwin" ]) && [ $LINUX -eq 0 ]
 then
 	warn "Your system seems to be Linux based. You should use '-l' flag so the tester can work correctly"
 fi
