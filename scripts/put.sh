@@ -31,8 +31,9 @@ function info()
 
 function usage()
 {
-	printf "%-13s./run.sh [-h]\n\n" "Usage:"
+	printf "%-13s./run.sh [-l|-h]\n\n" "Usage:"
 	printf "options:\n"
+	printf "%-13sFor Linux based systems.\n" "h"
 	printf "%-13sDisplay a help message.\n" "h"
 	printf "\n"
 	exit 0;

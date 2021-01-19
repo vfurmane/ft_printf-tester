@@ -16,6 +16,9 @@
 while [ $# -gt 0 ]
 do
 	case $1 in
+		-l|--linux)
+		LINUX=1
+		shift;;
 		-h|--help)
 		printf "version %s\n\n" $(git describe --tags 2> /dev/null || echo "0")
 		usage
