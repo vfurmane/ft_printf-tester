@@ -22,6 +22,8 @@ cd "$(dirname "$0")"
 
 # If OS is Linux-based
 LINUX=0
+# Do not compile libftprintf.a
+NOCOMPILE=0
 
 # Intro message
 source scripts/intro.sh
@@ -34,8 +36,11 @@ source scripts/args.sh
 tests=$(find test/srcs/expected -name *_test.c -exec sh -c "basename {} | sed 's/_test.c$//'" \;)
 
 # Compile libftprintf
-info "Compiling libftprintf.a..."
-make ft_printf > /dev/null 2>&1 || error "Error when compiling libftprintf.a..."
+if [ $NOCOMPILE -eq 0 ]
+then
+	info "Compiling libftprintf.a..."
+	make ft_printf > /dev/null 2>&1 || error "Error when compiling libftprintf.a..."
+fi
 
 # Compile the tests
 info "Compiling the tests..."

@@ -16,6 +16,9 @@
 while [ $# -gt 0 ]
 do
 	case $1 in
+		-c|--no-compile)
+		NOCOMPILE=1
+		shift;;
 		-l|--linux)
 		LINUX=1
 		shift;;
