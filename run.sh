@@ -50,20 +50,13 @@ make all > /dev/null 2>&1 || error "Error when compiling the tests..."
 mkdir -p logs/expected
 mkdir -p logs/user
 
-if [ $LINUX -eq 1 ]
-then
-	diff_opt="-I '^WPL - '"
-else
-	diff_opt=""
-fi
-
 for name in ${tests[@]}
 do
 	./outs/expected/$name\_test.out > logs/expected/$name\_test.c 2>&1
 	./outs/user/$name\_test.out > logs/user/$name\_test.c 2>&1
 	if [ $LINUX -eq 1 ]
 	then
-		diff -I "^WPL - " logs/expected/$name\_test.c logs/user/$name\_test.c
+	diff <(cat logs/expected/$name\_test.c | sed "s/^WPL.*//") <(cat logs/user/$name\_test.c | sed "s/^WPL.*//")
 	else
 		diff logs/expected/$name\_test.c logs/user/$name\_test.c
 	fi
