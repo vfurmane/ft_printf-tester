@@ -56,7 +56,7 @@ do
 	./outs/user/$name\_test.out > logs/user/$name\_test.c 2>&1
 	if [ $LINUX -eq 1 ]
 	then
-	diff <(cat logs/expected/$name\_test.c | sed "s/^WPL.*//") <(cat logs/user/$name\_test.c | sed "s/^WPL.*//")
+	diff <(cat logs/expected/$name\_test.c | sed "s/^\([[:digit:]]\{2\}\. \)\?WPL.*$//") <(cat logs/user/$name\_test.c | sed "s/^\([[:digit:]]\{2\}\. \)\?WPL.*$//")
 	else
 		diff logs/expected/$name\_test.c logs/user/$name\_test.c
 	fi
