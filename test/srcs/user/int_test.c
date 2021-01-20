@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 13:06:59 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/01/20 14:13:46 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/01/20 16:51:34 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,18 +29,19 @@ int	main(void)
 	ft_printf("09. Returned value	: %d\n", ft_printf("%-d\n", nbr));
 	ft_printf("10. Returned value	: %d\n", ft_printf("%7d\n", nbr));
 	ft_printf("11. Returned value	: %d\n", ft_printf("%*d\n", 7, nbr));
-	ft_printf("12. Returned value	: %d\n", ft_printf("%07d\n", nbr));
-	ft_printf("13. Returned value	: %d\n", ft_printf("%-7d\n", nbr));
-	ft_printf("14. Returned value	: %d\n", ft_printf("%0-7d\n", nbr));
-	ft_printf("15. Returned value	: %d\n", ft_printf("%-07d\n", nbr));
-	ft_printf("16. Returned value	: %d\n", ft_printf("%00d\n", nbr));
-	ft_printf("17. Returned value	: %d\n", ft_printf("%.7d\n", nbr));
-	ft_printf("18. Returned value	: %d\n", ft_printf("%5.7d\n", nbr));
-	ft_printf("19. Returned value	: %d\n", ft_printf("%0.d\n", nbr));
-	ft_printf("20. Returned value	: %d\n", ft_printf("%0.d\n", 0));
-	ft_printf("21. Returned value	: %d\n", ft_printf("%0.7d\n", nbr));
-	ft_printf("22. Returned value	: %d\n", ft_printf("%-.7d\n", nbr));
-	ft_printf("23. Returned value	: %d\n", ft_printf("%.*d\n", 7, nbr));
-	ft_printf("24. WPL - Returned value	: %d\n", ft_printf("WPL - %Hello Wo%rld\n"));
+	ft_printf("12. Returned value	: %d\n", ft_printf("%*d %*d %*d\n", -4, 42, -4, 22, -4, 2147483647));
+	ft_printf("13. Returned value	: %d\n", ft_printf("%07d\n", nbr));
+	ft_printf("14. Returned value	: %d\n", ft_printf("%-7d\n", nbr));
+	ft_printf("15. Returned value	: %d\n", ft_printf("%0-7d\n", nbr));
+	ft_printf("16. Returned value	: %d\n", ft_printf("%-07d\n", nbr));
+	ft_printf("17. Returned value	: %d\n", ft_printf("%00d\n", nbr));
+	ft_printf("18. Returned value	: %d\n", ft_printf("%.7d\n", nbr));
+	ft_printf("19. Returned value	: %d\n", ft_printf("%5.7d\n", nbr));
+	ft_printf("20. Returned value	: %d\n", ft_printf("%0.d\n", nbr));
+	ft_printf("21. Returned value	: %d\n", ft_printf("%0.d\n", 0));
+	ft_printf("22. Returned value	: %d\n", ft_printf("%0.7d\n", nbr));
+	ft_printf("23. Returned value	: %d\n", ft_printf("%-.7d\n", nbr));
+	ft_printf("24. Returned value	: %d\n", ft_printf("%.*d\n", 7, nbr));
+	ft_printf("25. WPL - Returned value	: %d\n", ft_printf("WPL - %Hello Wo%rld\n"));
 	return (0);
 }
