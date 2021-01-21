@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 13:06:59 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/01/20 17:59:43 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/01/21 12:44:41 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,20 +28,23 @@ int	main(void)
 	printf("09. Returned value	: %d\n", printf("%-d\n", nbr));
 	printf("10. Returned value	: %d\n", printf("%7d\n", nbr));
 	printf("11. Returned value	: %d\n", printf("%*d\n", 7, nbr));
-	printf("12. Returned value	: %d\n", printf("%*d %*d %*d\n", -4, 42, -4, 22, -4, 2147483647));
-	printf("13. Returned value	: %d\n", printf("%07d\n", nbr));
-	printf("14. Returned value	: %d\n", printf("%-7d\n", nbr));
-	printf("15. Returned value	: %d\n", printf("%0-7d\n", nbr));
-	printf("16. Returned value	: %d\n", printf("%-07d\n", nbr));
-	printf("17. Returned value	: %d\n", printf("%00d\n", nbr));
-	printf("18. Returned value	: %d\n", printf("%.7d\n", nbr));
-	printf("19. Returned value	: %d\n", printf("%5.7d\n", nbr));
-	printf("20. Returned value	: %d\n", printf("%0.d\n", nbr));
-	printf("21. Returned value	: %d\n", printf("%0.d\n", 0));
-	printf("22. Returned value	: %d\n", printf("%0.7d\n", nbr));
-	printf("23. Returned value	: %d\n", printf("%-.7d\n", nbr));
-	printf("24. Returned value	: %d\n", printf("%.*d\n", 7, nbr));
-	printf("25. Returned value	: %d\n", printf("%.*d %.*d\n", 7, -nbr, 3, -nbr));
-	printf("26. WPL - Returned value	: %d\n", printf("WPL - %Hello Wo%rld\n"));
+	printf("12. Returned value	: %d\n", printf("%0*d\n", 1, 0));
+	printf("13. Returned value	: %d\n", printf("%*d %*d %*d\n", -4, 42, -4, 22, -4, 2147483647));
+	printf("14. Returned value	: %d\n", printf("%07d\n", nbr));
+	printf("15. Returned value	: %d\n", printf("%03d\n", -nbr));
+	printf("16. Returned value	: %d\n", printf("%-7d\n", nbr));
+	printf("17. Returned value	: %d\n", printf("%0-7d\n", nbr));
+	printf("18. Returned value	: %d\n", printf("%-07d\n", nbr));
+	printf("19. Returned value	: %d\n", printf("%00d\n", nbr));
+	printf("20. Returned value	: %d\n", printf("%.7d\n", nbr));
+	printf("21. Returned value	: %d\n", printf("%5.7d\n", nbr));
+	printf("22. Returned value	: %d\n", printf("%0.d\n", nbr));
+	printf("23. Returned value	: %d\n", printf("%0.d\n", 0));
+	printf("24. Returned value	: %d\n", printf("%0.7d\n", nbr));
+	printf("25. Returned value	: %d\n", printf("%-.7d\n", nbr));
+	printf("26. Returned value	: %d\n", printf("%.*d\n", 7, nbr));
+	printf("27. Returned value	: %d\n", printf("%.*d %.*d\n", 7, -nbr, 3, -nbr));
+	printf("28. Returned value	: %d\n", printf("%01.0d, %03.0d, %05.0d\n", 0, 0, nbr));
+	printf("29. WPL - Returned value	: %d\n", printf("WPL - %Hello Wo%rld\n"));
 	return (0);
 }
