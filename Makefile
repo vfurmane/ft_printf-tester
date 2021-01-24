@@ -6,12 +6,13 @@
 #    By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/13 10:32:22 by vfurmane          #+#    #+#              #
-#    Updated: 2021/01/19 18:50:58 by vfurmane         ###   ########.fr        #
+#    Updated: 2021/01/23 15:35:40 by vfurmane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-EX_SRCS		= $(addprefix test/srcs/expected/, hex_test.c int_test.c)
-US_SRCS		= $(addprefix test/srcs/user/, hex_test.c int_test.c)
+SRCS		= $(addsuffix _test.c, hex int string)
+EX_SRCS		= $(addprefix test/srcs/expected/, $(SRCS))
+US_SRCS		= $(addprefix test/srcs/user/, $(SRCS))
 EX_OBJS		= $(EX_SRCS:.c=.o)
 US_OBJS		= $(US_SRCS:.c=.o)
 EX_EXEC		= $(patsubst test/srcs/expected/%, outs/expected/%, $(EX_OBJS:.o=.out))

@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 13:06:59 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/01/23 12:08:15 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/01/23 18:05:06 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ int	main(void)
 	ft_printf("29. Returned value	: %d\n", ft_printf("%*.*d %0*.*d\n", -3, -3, nbr, 4, -2, -nbr));
 	ft_printf("30. Returned value	: %d\n", ft_printf("%.*d %.*d %.*d\n", 7, -nbr, 3, -nbr, -4, nbr));
 	ft_printf("31. Returned value	: %d\n", ft_printf("%01.0d, %03.0d, %05.0d\n", 0, 0, nbr));
-	ft_printf("32. WPL - Returned value	: %d\n", ft_printf("WPL - %Hello Wo%rld\n"));
+	ft_printf("32. Returned value	: %d\n", ft_printf("%.*u\n", 0, 0));
+	ft_printf("33. WPL - Returned value	: %d\n", ft_printf("WPL - %Hello Wo%rld\n"));
 	return (0);
 }
