@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 13:06:59 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/01/24 11:38:39 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/01/24 17:48:43 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ int	main(void)
 	ft_printf("08. Returned value	: %d\n", ft_printf("%.s\n", str));
 	ft_printf("09. Returned value	: %d\n", ft_printf("%p\n", (void*)42));
 	ft_printf("10. WPL - Returned value	: %d\n", ft_printf("WPL - %p\n", NULL));
-	ft_printf("11. WPL - Returned value	: %d\n", ft_printf("WPL - %7.p\n", NULL));
-	ft_printf("12. Returned value	: %d\n", ft_printf("%c, %-c, %12c, %-3c, %-1c, %1c, %-2c, %-4c, %5c, %3c, %-*c, %-*c, %*c, %*c", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0));
+	ft_printf("11. Returned value	: %d\n", ft_printf("%.p\n", (void*)4411420872));
+	ft_printf("12. WPL - Returned value	: %d\n", ft_printf("WPL - %7.p\n", NULL));
+	ft_printf("13. Returned value	: %d\n", ft_printf("%c, %-c, %12c, %-3c, %-1c, %1c, %-2c, %-4c, %5c, %3c, %-*c, %-*c, %*c, %*c", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0));
 	return (0);
 }

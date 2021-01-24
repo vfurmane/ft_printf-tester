@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 13:06:59 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/01/24 11:38:52 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/01/24 17:48:50 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ int	main(void)
 	printf("08. Returned value	: %d\n", printf("%.s\n", str));
 	printf("09. Returned value	: %d\n", printf("%p\n", (void*)42));
 	printf("10. WPL - Returned value	: %d\n", printf("WPL - %p\n", NULL));
-	printf("11. WPL - Returned value	: %d\n", printf("WPL - %7.p\n", NULL));
-	printf("12. Returned value	: %d\n", printf("%c, %-c, %12c, %-3c, %-1c, %1c, %-2c, %-4c, %5c, %3c, %-*c, %-*c, %*c, %*c", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0));
+	printf("11. Returned value	: %d\n", printf("%.p\n", (void*)4411420872));
+	printf("12. WPL - Returned value	: %d\n", printf("WPL - %.p\n", NULL));
+	printf("13. Returned value	: %d\n", printf("%c, %-c, %12c, %-3c, %-1c, %1c, %-2c, %-4c, %5c, %3c, %-*c, %-*c, %*c, %*c", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0));
 	return (0);
 }
