@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 13:06:59 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/01/24 11:22:01 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/01/24 11:38:52 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(void)
 	printf("02. Returned value	: %d\n", printf("%s\n", str));
 	printf("03. Returned value	: %d\n", printf("%s\n", NULL));
 	printf("04. Returned value	: %d\n", printf("%20s\n", str));
-	printf("05. Returned value	: %d\n", printf("%020s\n", str));
+	printf("05. WPL - Returned value	: %d\n", printf("WPL - %020s\n", str));
 	printf("06. Returned value	: %d\n", printf("%-20s\n", str));
 	printf("07. Returned value	: %d\n", printf("%.5s\n", str));
 	printf("08. Returned value	: %d\n", printf("%.s\n", str));
